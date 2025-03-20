@@ -46,8 +46,6 @@ namespace ProductApps
             get { return totalWrap; }
             set { totalWrap = value; }
         }
-
-
         private decimal Delivery
         {
             get { return delivery; }
@@ -90,5 +88,6 @@ namespace ProductApps
         {
              TotalWrap = TotalCharge + Wrapping;
         }
+
     }
 }
