@@ -21,6 +21,7 @@ namespace ProductApps
     public partial class MainWindow : Window
     {
         Product cProduct;
+        private object calWrapping;
 
         public MainWindow()
         {
@@ -36,6 +37,10 @@ namespace ProductApps
                 totalPaymentTextBlock.Text = Convert.ToString(cProduct.TotalPayment);
                 cProduct.calTotalCharge();
                 totalChargeTextBox.Text = Convert.ToString(cProduct.TotalCharge);
+                cProduct.calWrapping();
+                totalChargeWrapTextBox.Text = Convert.ToString(cProduct.TotalWrap);
+              
+                
                
             }
             catch (FormatException)
